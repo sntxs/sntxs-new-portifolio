@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact_cont {
+    font-size: 1.5em;
+    padding-bottom: 12em;
+    place-items: center;
+    display: grid;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+textarea {
+    min-height: 12.5rem;
+    resize: vertical;
+}
+
+button {
+    border: none;
+    border-radius: 9px;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    font: inherit;
+    padding: 0.5rem;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: #004396;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border-color: rgb(0, 110, 255);
+    box-shadow: 0 0 0 0.01em rgb(0, 110, 255);
+}
+
+.success,
+.error {
+    text-align: center;
+}
+
+.success {
+    color: rgb(0, 110, 24);
+}
+
+.error {
+    color: rgba(255, 68, 34, 0.712);
+}
